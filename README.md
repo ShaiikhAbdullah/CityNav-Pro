@@ -1,6 +1,6 @@
 # 🚀 CityNav Pro – Urban Exploration Redefined!
+![Github Banner](https://github.com/user-attachments/assets/d94759d0-bff1-41fe-ae03-e951cd49e8c8)
 
-![login-banner](https://github.com/user-attachments/assets/a4f3f083-e4b5-45fc-aa9f-854f7ab218e6)
 
 
 CityNav Pro is my **Final Year Project** at **Bahria University**, designed to enhance urban exploration by uncovering **hidden gems** using Google Maps API. 
@@ -26,7 +26,11 @@ CityNav Pro is my **Final Year Project** at **Bahria University**, designed to e
 ---
 
 ## 📸 Screenshots
-
+![9](https://github.com/user-attachments/assets/d1eac81f-4338-4668-81dc-a5d08650f20e)
+![10](https://github.com/user-attachments/assets/4f56323c-6e58-43f7-95c7-fd09a2229708)
+![11](https://github.com/user-attachments/assets/b23dcc5b-94bc-452a-8b79-d99d63d5fedd)
+![12](https://github.com/user-attachments/assets/374bfa61-ea05-4a52-a4ef-25f1061c851a)
+![13](https://github.com/user-attachments/assets/afd19dba-b126-4eb8-8999-d5ae0c6ac5e0)
 
 ---
 
