@@ -1,0 +1,114 @@
+{
+  "rawalpindi": {
+    "places": [
+      {
+        "name": "Nasir Fry Chanay",
+        "rating": "4.5",
+        "image": "./assets/HiddenGems/nasir-fry-chanay.PNG",
+        "vicinity": "Near J3C6+JVV AA Graphics, Mohallah Jhangi Jadeed Banni, Rawalpindi, Punjab 46000",
+        "geometry": {
+          "location": {
+            "lat": 33.6216283,
+            "lng": 73.0622373
+          }
+        },
+        "url": "https://maps.app.goo.gl/9reKFcEJ9h1VA8Fp6?g_st=ic"
+      },
+      {
+        "name": "Gem Food Stand",
+        "rating": "4.7",
+        "image": "./assets/HiddenGems/nasir-fry-chanay.PNG",
+        "vicinity": "456 Gem Street, Rawalpindi",
+        "geometry": {
+          "location": {
+            "lat": 33.689,
+            "lng": 73.0555
+          }
+        },
+        "url": "https://maps.app.goo.gl/your_gem_food_stand_url"
+      }
+    ]
+  },
+  "islamabad": {
+    "places": [
+      {
+        "name": "The Chilling Spot",
+        "rating": "4.7",
+        "image": "https://yourimageurl.com/Chilling spot.jpg ",
+        "vicinity": "Near Khyber Pakhtunkhwa Entry Board, Pir Sohawa road",
+        "geometry": {
+          "location": {
+            "lat": 33.7946282,
+            "lng": 73.124009
+          }
+        },
+        "url": "https://maps.app.goo.gl/Sig57fjNRXYtCpk98?g_st=com.google.maps.preview.copy"
+      },
+      {
+        "name": "G8 Dhaba",
+        "rating": "4.1",
+        "image": "https://yourimageurl.com/G-8 Dhaba.jpg ",
+        "vicinity": "Near G-8 Mauve Area G-8,Islamabad , capital territory ",
+        "geometry": {
+          "location": {
+            "lat": 33.6892081,
+            "lng": 73.0522159
+          }
+        },
+        "url": "https://maps.app.goo.gl/9reKFcEJ9h1VA8Fp6?g_st=ic"
+      },
+      {
+        "name": "Sadhu Bagh",
+        "rating": "4.3",
+        "image": "https://yourimageurl.com/Sadhubagh.jpg ",
+        "vicinity": "Margalla Hills Rd, Shah Allah Ditta, Islamabad, Islamabad Capital Territory",
+        "geometry": {
+          "location": {
+            "lat": 33.7215639,
+            "lng": 72.9153173
+          }
+        },
+        "url": "https://maps.app.goo.gl/hHwH814zDmujDZ2w7?g_st=com.google.maps.preview.copy"
+      },
+      {
+        "name": "Gadela Hotel",
+        "rating": "2.0",
+        "image": "https://yourimageurl.com/Gadelahotel.jpg ",
+        "vicinity": "PWC7+9X8, Shah Allah Ditta Islamabad, Islamabad Capital Territory",
+        "geometry": {
+          "location": {
+            "lat": 33.720862,
+            "lng": 72.9148452
+          }
+        },
+        "url": "https://maps.app.goo.gl/FaY5FhxM79znTcZGA?g_st=com.google.maps.preview.copy"
+      },
+      {
+        "name": "Sukoon.com",
+        "rating": "3.9",
+        "image": "https://yourimageurl.com/sukoon.jpg ",
+        "vicinity": "Near D-17 Islamabad, Islamabad Capital Territory",
+        "geometry": {
+          "location": {
+            "lat": 33.6553787,
+            "lng": 72.8627668
+          }
+        },
+        "url": "https://maps.app.goo.gl/ap8F2FwvSqoh1peP6?g_st=com.google.maps.preview.copy"
+      },
+      {
+        "name": "Nashta Stop",
+        "rating": "3.2",
+        "image": "https://yourimageurl.com/NashtaStop.jpg ",
+        "vicinity": "Near Golra Mor, Golra Rd, E-13 Islamabad Capital Territory",
+        "geometry": {
+          "location": {
+            "lat": 33.672588,
+            "lng": 72.9482146
+          }
+        },
+        "url": "https://maps.app.goo.gl/E5WrFnp81jTHZGhD7?g_st=com.google.maps.preview.copy "
+      }
+    ]
+  }
+}

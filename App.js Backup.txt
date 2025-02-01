@@ -1,0 +1,100 @@
+import { ActivityIndicator } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, View } from 'react-native';
+import TabNavigation from './App/Navigations/TabNavigation';
+import { useEffect, useState } from 'react';
+import * as Location from 'expo-location';
+import { UserLocationContext } from './App/Context/UserLocationContext';
+import { useFonts } from 'expo-font';
+import LoginScreen from './App/Components/LoginScreen/LoginScreen';
+import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-expo';
+import * as SecureStore from 'expo-secure-store';
+
+// Token cache for Clerk authentication
+const tokenCache = {
+  async getToken(key) {
+    try {
+      return SecureStore.getItemAsync(key);
+    } catch (err) {
+      return null;
+    }
+  },
+  async saveToken(key, value) {
+    try {
+      return SecureStore.setItemAsync(key, value);
+    } catch (err) {
+      return;
+    }
+  },
+};
+
+// Deep linking configuration
+const linking = {
+  prefixes: [Linking.createURL('/')], // Instead of makeUrl
+  config: {
+    screens: {
+      Home: 'home',
+      Search: 'search',
+      Fav: 'fav',
+      Profile: 'profile',
+    },
+  },
+};
+
+export default function App() {
+  const [location, setLocation] = useState(null);
+  const [errorMsg, setErrorMsg] = useState(null);
+
+  // Loading custom fonts
+  const [fontsLoaded] = useFonts({
+    'raleway-regular': require('./assets/Fonts/Raleway-Regular.ttf'),
+    'raleway-bold': require('./assets/Fonts/Raleway-SemiBold.ttf'),
+    'outfit-regular': require('./assets/Fonts/Outfit-Regular.ttf'),
+    'outfit-bold': require('./assets/Fonts/Outfit-Bold.ttf'),
+  });
+
+  // Location permissions and fetching current location
+  useEffect(() => {
+    (async () => {
+      let { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== 'granted') {
+        setErrorMsg('Permission to access location was denied');
+        return;
+      }
+      let location = await Location.getCurrentPositionAsync({});
+      setLocation(location);
+    })();
+  }, []);
+
+  // Show loading indicator if fonts are not yet loaded
+  if (!fontsLoaded) {
+    return <ActivityIndicator size='large' color='#0000ff' />;
+  }
+
+  return (
+    <ClerkProvider
+      tokenCache={tokenCache}
+      publishableKey='pk_test_YWR2YW5jZWQtZ25hdC04MC5jbGVyay5hY2NvdW50cy5kZXYk'
+    >
+      <UserLocationContext.Provider value={{ location, setLocation }}>
+        <NavigationContainer linking={linking}>
+          <SignedIn>
+            <TabNavigation />
+          </SignedIn>
+          <SignedOut>
+            <LoginScreen />
+          </SignedOut>
+        </NavigationContainer>
+      </UserLocationContext.Provider>
+    </ClerkProvider>
+  );
+}
+
+// Styles
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+});

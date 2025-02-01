@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "CityNavPro",
+    "slug": "CityNavPro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.citynavpro.findplace"
+    },
+    "android": {
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "googleServicesFile": "./google-services.json",
+      "package": "com.citynavpro.findplace",
+      "googleMapsApiKey": "AIzaSyCcWkFbKmC3opihlQj4seogwfqATmX9FXM",
+      "config": {
+        "googleSignIn": {
+          "clientId": "1043703452536-b1k89ft3jseq6c7v5knonqe823filhl2.apps.googleusercontent.com"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow CityNavPro to use your location."
+        }
+      ],
+      "expo-font"
+    ],
+    "scheme": "citynavpro",
+    "extra": {
+      "eas": {
+        "projectId": "a400a3e4-6d23-4b59-a46d-3979399e083d"
+      }
+    },
+    "owner": "shaiikh_abdullah"
+  }
+}
