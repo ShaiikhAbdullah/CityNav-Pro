@@ -25,7 +25,7 @@ CityNav Pro is my **Final Year Project** at **Bahria University**, designed to e
 
 ---
 
-## 📸 Screenshots
+## 📸 UI Screenshots
 ![9](https://github.com/user-attachments/assets/d1eac81f-4338-4668-81dc-a5d08650f20e)
 ![10](https://github.com/user-attachments/assets/4f56323c-6e58-43f7-95c7-fd09a2229708)
 ![11](https://github.com/user-attachments/assets/b23dcc5b-94bc-452a-8b79-d99d63d5fedd)
